@@ -4,7 +4,11 @@ ob_start();
 if(isset($_POST['submit']))
 {
 	// $con = mysqli_connect('localhost', 'database_user', 'database_password','database');
+<<<<<<< HEAD
 	// $con = mysqli_connect('localhost', 'root', 'root','Bus_dir');
+=======
+// 	$con = mysqli_connect('localhost', 'root', 'root','Bus_dir');
+>>>>>>> 06cc0c475cf9a1d418bcb91eeca57162f4e90e3e
 	$con = mysqli_connect('db4free.net', 'laravel_link', 'laravel_link','laravel_link');
 
 	// get the post records
