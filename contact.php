@@ -4,8 +4,8 @@ ob_start();
 if(isset($_POST['submit']))
 {
 	// $con = mysqli_connect('localhost', 'database_user', 'database_password','database');
-	$con = mysqli_connect('localhost', 'root', 'root','Bus_dir');
-	// $con = mysqli_connect('db4free.net', 'laravel_link', 'laravel_link','laravel_link');
+	// $con = mysqli_connect('localhost', 'root', 'root','Bus_dir');
+	$con = mysqli_connect('db4free.net', 'laravel_link', 'laravel_link','laravel_link');
 
 	// get the post records
 
@@ -19,8 +19,8 @@ if(isset($_POST['submit']))
 	$sql = "INSERT INTO `contact` (`Id`, `name`, `email`, `phone`, `message`) VALUES ('0', '$txtName', '$txtEmail', '$txtPhone', '$txtMessage')";
 
 	// insert in database 
-	$rs = mysqli_query($con, $sql);
-	if($rs)
+	$result = mysqli_query($con, $sql);
+	if($result)
 	{
 
 		echo "<script type='text/javascript'>
